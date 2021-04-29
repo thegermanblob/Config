@@ -6,6 +6,16 @@ mkdir -p ~/.config/nvim
 touch ~/.config/nvim/init.vim
 ln -f init.vim ~/.config/nvim/init.vim
 echo linked the .vimrc
+touch ~/.config/nvim/dayinit
+ln -f dayinit ~/.config/nvim/dayinit
+echo linked the dayinit
+touch ~/.config/nvim/nightinit
+ln -f nightinit ~/.config/nvim/nightinit
+echo linked the nightinit
+cp dayvim.sh ~/.config/nvim/dayvim.sh
+echo coppied dayvim script
+cp nightvim.sh ~/.config/nvim/nightvim.sh
+echo coppied nightvim script
 
 touch ~/.tmux.conf
 ln -f TGB.tmux.conf ~/.tmux.conf
