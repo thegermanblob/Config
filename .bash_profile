@@ -8,6 +8,7 @@ alias gcob='git checkout branch'
 alias glg='git log --graph --oneline --decorate --all'
 alias gcm='git commit -m'
 alias gpp='git push'
+alias sqlchk='mysql -hlocalhost -uroot -p'
 function glf() { git log --all --grep="$1"; }
 
 #---------
@@ -17,8 +18,9 @@ alias lt='ls --human-readable --size -l -S --classify'
 alias br='source .bashrc'
 alias chk='gcc -Wall -pedantic -Werror -Wextra'
 alias mk='chmod u+x'
+alias py="cp ~/.config/pytemp "
 . ~/.bashrc
-
+set -o vi
 #Customize alias
 alias vicu='nvim ~/.config/nvim/init.vim'
 alias brc='nvim ~/.bashrc'
@@ -28,6 +30,7 @@ alias flx='tmux new -t Flex'
 alias chk='gcc -Wall -pedantic -Werror -Wextra'
 alias nightvim='cp /home/vagrant/.config/nvim/nightinit /home/vagrant/.config/nvim/init.vim'
 alias dayvim='cp /home/vagrant/.config/nvim/dayinit /home/vagrant/.config/nvim/init.vim'
+alias confbackup='git -C ~/.conf/Config/ add . | gcm "update" | gpp'
 
 
 #paths
