@@ -30,7 +30,7 @@ alias flx='tmux new -t Flex'
 alias chk='gcc -Wall -pedantic -Werror -Wextra'
 alias nightvim='cp /home/vagrant/.config/nvim/nightinit /home/vagrant/.config/nvim/init.vim'
 alias dayvim='cp /home/vagrant/.config/nvim/dayinit /home/vagrant/.config/nvim/init.vim'
-alias confbackup='git -C ~/.conf/Config/ add . | gcm "update" | gpp'
+alias confbackup='git -C ~/.conf/Config/ add . | git -C ~/.conf/Config/ commit -m "update" | git -C ~/.conf/Config/ push'
 
 
 #paths
