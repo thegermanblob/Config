@@ -8,6 +8,7 @@ alias gcob='git checkout branch'
 alias glg='git log --graph --oneline --decorate --all'
 alias gcm='git commit -m'
 alias gpp='git push'
+alias gst='git status'
 alias sqlchk='mysql -hlocalhost -uroot -p'
 function glf() { git log --all --grep="$1"; }
 
